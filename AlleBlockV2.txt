@@ -1,0 +1,12 @@
+[Adblock Plus 2.0]
+! Title: AlleBlockV2
+! Description: Always fresh filters set for ABP/uBO/AdGuard hiding unnecessary & irritative elements from Polish advertising portals such as Allegro, OLX, etc. Derived from original AlleBlock by @maciejtarmas.
+! Version: 2023.01
+! Date: 2023/11/18
+! Expires: 1 days
+! Homepage: https://github.com/CrusheerPL/AlleBlockV2
+
+! [EN] NOTE: If you see any elements which should be hidden or blocked, please report it in the Issues section of GitHub repository: https://github.com/CrusheerPL/AlleBlockV2/issues
+! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, zgłoś to na stronie repozytorium GitHub w zakładce Issues: https://github.com/CrusheerPL/AlleBlockV2/issues
+
+! TODO
