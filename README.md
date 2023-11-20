@@ -1,4 +1,5 @@
-<img src="https://github.com/CrusheerPL/AlleBlockV2/assets/35576727/301eb2bd-d7a4-4fc2-9094-37d8d6460e53" align="center"/>
+<img src="https://user-images.githubusercontent.com/35576727/284328450-cea34914-b97b-4b7e-bba4-c4f21a4da39a.png" align="center"/>
+
 <p align="center"><i>*Stylized a-letter is a trademark registered by Allegro Sp. z o.o. (filing no. in the EUIPO's database: 018458315)</i></p>
 
 ## PL
@@ -18,3 +19,4 @@ Zalecany bloker reklam: uBlock Origin.
 - Have an element to hide or block, or something does not work properly? [Let me know in the Issues section.](https://github.com/CrusheerPL/AlleBlockV2/issues)
 
 Recommended ad-blocker: uBlock Origin.
+
