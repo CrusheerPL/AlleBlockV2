@@ -1,5 +1,4 @@
-<img src="https://user-images.githubusercontent.com/35576727/284328450-cea34914-b97b-4b7e-bba4-c4f21a4da39a.png" align="center"/>
-
+![alleblockv2](https://github.com/CrusheerPL/AlleBlockV2/assets/35576727/cea34914-b97b-4b7e-bba4-c4f21a4da39a)
 <p align="center"><i>*Stylized a-letter is a trademark registered by Allegro Sp. z o.o. (filing no. in the EUIPO's database: 018458315)</i></p>
 
 ## PL
