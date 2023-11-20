@@ -12,7 +12,7 @@ Zalecany bloker reklam: uBlock Origin.
 
 ## EN
 
-- Always fresh filters set for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro PL/CZ, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste).
+- Always fresh filter set for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro PL/CZ, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste).
 - No negative impact on sites' functionality.
 - Derived from original [AlleBlock](https://github.com/maciejtarmas/AlleBlock) by @maciejtarmas which is not being updated for a long time.
 - Have an element to hide or block, or something does not work properly? [Let me know in the Issues section.](https://github.com/CrusheerPL/AlleBlockV2/issues)
