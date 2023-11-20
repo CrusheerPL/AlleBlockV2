@@ -1,12 +1,224 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
-! Description: Always fresh filters set for ABP/uBO/AdGuard hiding unnecessary & irritative elements from Polish advertising portals such as Allegro, OLX, etc. Derived from original AlleBlock by @maciejtarmas.
+! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste). Derived from original AlleBlock by @maciejtarmas.
 ! Version: 2023.01
-! Date: 2023/11/18
+! Date: 2023/11/20
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
-! [EN] NOTE: If you see any elements which should be hidden or blocked, please report it in the Issues section of GitHub repository: https://github.com/CrusheerPL/AlleBlockV2/issues
-! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, zgłoś to na stronie repozytorium GitHub w zakładce Issues: https://github.com/CrusheerPL/AlleBlockV2/issues
+! [EN] NOTE: If you see any elements which should be hidden or blocked, or something does not work, please report it in the Issues section of GitHub repository: https://github.com/CrusheerPL/AlleBlockV2/issues
+! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, stwórz zgłoszenie na stronie repozytorium GitHub w zakładce Issues: https://github.com/CrusheerPL/AlleBlockV2/issues
 
-! TODO
+! Allegro PL+CZ
+! Main
+allegro.cz##div[data-box-name="Top header background"]
+allegro.pl##div[data-box-name="HP Redesign Content"]
+allegro.cz##div[data-box-name="HP CZ Content"]
+allegro.pl,allegro.cz##div[data-box-name="metrum-footer-partial-expander"]
+allegro.pl,allegro.cz##div[data-box-name="promoted.links.grid.container"]
+allegro.pl,allegro.cz##div[data-box-name="f-social"]
+allegro.pl##div[data-box-name$="desktop-nav-links"]
+allegro.pl##div[data-group-id="header-layers-desktop_eBilet.pl"]
+allegro.pl##a[href^="/kampania"]
+
+! Login + register
+allegro.pl##div[data-box-name="banner - cmuid"]:upward(2)
+allegro.pl###chat-container
+
+! Categories - PL
+! General
+allegro.pl##div[data-box-name="structure-container"]
+allegro.pl##div[data-box-name*="Showcase"]
+allegro.pl##div[data-box-name*="Promoted"]
+allegro.pl##div[data-box-name*="SEO"]
+allegro.pl##div[data-box-name^="PL - Additional"]
+! Nieruchomości
+allegro.pl##div[data-box-name="SHOWCASE NIERUCHOMOSCI"]
+allegro.pl##div[data-box-name="PROMOWANE_OGŁOSZENIA"]
+allegro.pl##div[data-box-name="DOBIERARKA NIERUCHOMOSCI SG"]
+! Moda, Uroda
+allegro.pl##div[data-box-name="Marki"]
+allegro.pl##div[data-box-name^="Articles"]
+allegro.pl##div[data-box-name^="korzyści z licytacji"]
+allegro.pl##div[data-box-name^="Lista marek"]
+allegro.pl##div[data-box-name="structure-tabs"]
+allegro.pl##div[data-box-name*="polecane"]
+allegro.pl##div[data-box-name="kontener z tagiem analitycznym"]
+allegro.pl##a[href$="/marki"]
+! Motoryzacja > Ogłoszenia motoryzacyjne
+allegro.pl##div[data-box-name^="Baner"]
+allegro.pl##div[data-box-name$="KARUZELA"]:upward(1)
+allegro.pl##div[data-box-name$="OFERTA_DNIA"]:upward(1)
+allegro.pl##div[data-box-name^="Belka wystawianie kontener główny"]
+allegro.pl##div[data-box-name="Promowane na dziale ogłoszeń"]
+allegro.pl##h2:has-text("Przyczepy, naczepy, maszyny"):upward(5)
+allegro.pl##div[data-box-name="Samochody osobowe- Nadwozia"]
+allegro.pl##div[data-box-name="LP Ogłoszenia - motocykle"]
+allegro.pl##div[data-box-name*="marki"]
+allegro.pl##div[data-box-name="Wideo"]
+allegro.pl##div[data-box-name^="najnowsze artykuly"]
+allegro.pl##div[data-box-name="inspiracje motoryzacji"]
+allegro.pl##div[data-box-name="Linki wewnętrzne"]
+allegro.pl##div[data-box-name="INFO"]
+! Motoryzacja > Opony
+allegro.pl##div[data-box-name^="TABS-OPONY"]
+allegro.pl##div[data-box-name="Opony całoroczne"]
+allegro.pl##div[data-box-name^="STREFA MAREK"]
+allegro.pl##div[data-box-name^="Strefa Marek"]
+allegro.pl##div[data-box-name^="Testy Opon"]
+allegro.pl##div[data-box-name^="Artykuły opon"]
+allegro.pl##div[data-box-name^="Płytki inspiracji"]
+allegro.pl##div[data-box-name="Felgi w najlepszej cenie"]
+allegro.pl##div[data-box-name="Felgi aluminiowe"]
+allegro.pl##div[data-box-name="Felgi stalowe"]
+allegro.pl##div[data-box-name="Kompletne Koła"]
+allegro.pl##div[data-box-name="Kolpaki"]
+allegro.pl##div[data-box-name^="Chemia"]
+allegro.pl##div[data-box-name="Bezpieczenstwo"]
+! Motoryzacja > Strefa motocykli
+allegro.pl##div[data-box-name^="Rekomendacje"]
+allegro.pl##div[data-box-name="Motocykle-czesci"]
+allegro.pl##div[data-box-name="Czesci"]
+allegro.pl##div[data-box-name="Bagaż motocyklowy"]
+allegro.pl##div[data-box-name="Kaski motocyklowe"]
+allegro.pl##div[data-box-name="motocykle1"]
+allegro.pl##div[data-box-name="Odzież motocyklowa"]
+allegro.pl##div[data-box-name="Motocykle-i-quady"]
+allegro.pl##div[data-box-name="Artykuly"]
+! Motoryzacja > Strefa maszyn
+allegro.pl##div[data-box-name="maszyny rolnicze"]
+allegro.pl##div[data-box-name="maszyny budowlane"]
+allegro.pl##div[data-box-name*="przemyslowe"]
+allegro.pl##div[data-box-name="Przyczepy i naczepy"]
+allegro.pl##div[data-box-name="Inne_pojazdy"]
+allegro.pl##h2:has-text("Maszyny dla profesjonalistów"):upward(5)
+
+! Categories - CZ
+allegro.cz,archiwum.allegro.pl##div[data-box-name="lazy"]:not(:has(div[data-box-name="popularCategories"]))
+allegro.cz##div[data-box-name="ads-container"]
+allegro.cz##div[data-box-name="best-price-guarantee-container"]
+allegro.cz##div[data-box-name="section-campaigns-container"]
+allegro.cz##div[data-box-name="section-banner-container"]
+
+! Listings
+allegro.pl,allegro.cz##div[data-box-name^="premium.with.dfp"]
+allegro.cz##article[data-analytics-view-custom-context="SPONSORED"]
+allegro.pl,~archiwum.allegro.pl##article:not([data-analytics-enabled])
+allegro.pl##div[data-box-name="seoLazyBelowFilters"]
+allegro.pl##div[data-box-name="allegro.advertising.adspremium"]
+allegro.pl,allegro.cz##div[data-box-name="rekomendacje"]
+allegro.pl##div[data-box-name="articles"]
+allegro.pl##div[data-box-name="kategorie komplementarne kontener"]
+allegro.pl##div[data-box-name="seo text container"]
+allegro.pl##div[data-box-name="seo-custom-navigation-links"]
+
+! Offer page
+allegro.pl,allegro.cz##div[data-box-name^="Cobalt"]
+allegro.pl##div[data-box-name^="Cyan"]
+allegro.cz##div[data-box-name*="cyan"]
+allegro.pl##div[data-box-name="container.moreOf"]:upward(3)
+allegro.cz##div[data-box-name$="moreOf.browser"]
+allegro.pl##div[data-box-name="Seller Banner Container"]
+allegro.pl,allegro.cz##div[data-box-name="reco.bottom.container"]
+allegro.cz##div[data-box-name^="offers_reco_same_seller_pixel"]
+allegro.pl##div[data-box-name="allegro.oferta.carousel.container"]
+allegro.pl##div[data-box-name="Product series"]:upward(3)
+! Sale ended
+allegro.pl##div[data-box-name="Container carousel reco ended"]
+
+! Thank you for your purchases
+! TODO: Allegro CZ - samples needed
+allegro.pl##div[data-box-name*="adblockDetector"]
+allegro.pl##div[data-box-name="marketing.consent.container"]
+allegro.pl##div[data-box-name*="allegro-pay-container"]
+
+! Scripts, trackers & resources (snippets from AlleBlock ver. 2021_ROLLING_LIVE by @maciejtarmas - CC BY-NC 4.0)
+! NOTE: original filters have not been updated for a long time, so proper operation is not guaranteed
+! TODO: Allegro CZ - samples needed
+||assets.allegrostatic.com/opbox-gdpr-consents/*$domain=allegro.pl
+||analytics.google.com/*$domain=allegro.pl
+||doubleclick.net/*$domain=allegro.pl
+||gemius.pl/*$domain=allegro.pl
+||googletagmanager.com/*$domain=allegro.pl
+||googletagservices.com/*$domain=allegro.pl
+||kampyle.com/*$domain=allegro.pl
+||ngastatic.com/s4c/tracker.js$domain=allegro.pl
+||smartadserver.com/*$domain=allegro.pl
+||adform.net/*$domain=allegro.pl
+||datadome.co/*$domain=allegro.pl
+||flashtalking.com/*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/appstore*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/playstore*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/appgallery*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/facebook*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/linkedin*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/instagram*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/pinterest*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/youtube*$domain=allegro.pl
+||assets.allegrostatic.com/metrum/icon/charity*$domain=allegro.pl
+||assets.allegrostatic.com/opbox-adspremium/*$domain=allegro.pl
+||assets.allegrostatic.com/opbox-listing-seo/*$domain=allegro.pl
+||assets.allegrostatic.com/e09d28a6-external/*$domain=allegro.pl
+||assets.allegrostatic.com/opbox-plugin-facebook-tracking/*$domain=allegro.pl
+||assets.allegrostatic.com/gemius/*$domain=allegro.pl
+||assets.allegrostatic.com/opbox-adblock-detector/*$domain=allegro.pl
+||assets.allegrostatic.com/opbox-advertisement-box/*$script,domain=allegro.pl
+
+!---------------------------------------------------------------------------------
+
+! Allegro Lokalnie
+! Main
+allegrolokalnie.pl##.mlc-home-page__greeting
+allegrolokalnie.pl##.mlc-home-page__hero-carousel
+allegrolokalnie.pl##.mlc-home-page__benefits
+allegrolokalnie.pl##.mlc-home-page__service-info
+allegrolokalnie.pl##.mlc-home-page-carousels
+allegrolokalnie.pl##.footer-banner
+allegrolokalnie.pl##div.mlc-site-footer__nav-section:has(a.mlc-site-footer__mobile-store-link)
+
+! Offer page
+allegrolokalnie.pl##.mlc-offer__similar-offers
+allegrolokalnie.pl##.mlc-offer__gaming-offers
+allegrolokalnie.pl##.mlc-offer__sp-offers
+
+!---------------------------------------------------------------------------------
+
+! Archiwum Allegro
+! Main
+archiwum.allegro.pl##div[data-box-name^="modal"]
+archiwum.allegro.pl##div[data-box-name^="layout.container.recommendations"]
+archiwum.allegro.pl##div[data-box-name="naAllegro"]
+! Listings
+archiwum.allegro.pl##div[data-box-name="allegro.listing.left.popular.container"]
+archiwum.allegro.pl##div[data-box-name="allegro.listing.left.recentlyArchived.container"]
+archiwum.allegro.pl##div[data-box-name="left-ads-container"]
+archiwum.allegro.pl##div[data-box-name="banner.podzial"]
+! Offer page
+archiwum.allegro.pl##div[data-box-name="title.container"]
+
+!---------------------------------------------------------------------------------
+
+! MALL CZ/SK/HU/HR + mimovrste [WIP]
+! Main
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com###above-header
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##a[href^="/kampan"]:upward(1)
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.top-icons
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.hp-banner__slides
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.homepage__container
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.menu-brand-panel
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.menu-container__banner
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.banner
+
+! TODO: Categories & Listings
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.bb-banners--full
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.category-best-sellers
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##.category__smart-banner
+
+! Offer page
+mall.cz,mall.sk,mall.hu,mall.hr,mimovrste.com##div[product-url]
+mall.cz,mall.hu,mall.hr,mimovrste.com##.detail__up-xsell-recommended
+mall.sk##.db__recommended
+mall.cz,mall.sk,mall.hr,mimovrste.com##.footer-column
+mall.sk##.footer-interest
+mall.sk##.footer-category
+mall.sk##h6:has-text("Môže sa hodiť"):upward(1)
