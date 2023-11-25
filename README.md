@@ -9,7 +9,8 @@
 - Jeśli zauważyłeś/aś element do ukrycia lub zablokowania, bądź w przypadku, gdy filtry nie działają poprawnie, [daj znać w zakładce Issues.](https://github.com/CrusheerPL/AlleBlockV2/issues)
 
 Zalecany bloker reklam: uBlock Origin.
-UWAGA: Niektóre reguły nie będą działały z opartym na uBO blokerze reklam przeglądarki Brave - problem ten leży po stronie przeglądarki, nie filtrów.
+
+**UWAGA:** Niektóre reguły nie będą działały z opartym na uBO blokerem reklam przeglądarki Brave - problem ten leży po stronie przeglądarki, nie filtrów.
 
 ## EN
 
@@ -19,5 +20,6 @@ UWAGA: Niektóre reguły nie będą działały z opartym na uBO blokerze reklam 
 - Have an element to hide or block, or something does not work properly? [Let me know in the Issues section.](https://github.com/CrusheerPL/AlleBlockV2/issues)
 
 Recommended ad-blocker: uBlock Origin.
-NOTE: Some rules will not work with uBO-based built-in Brave Browser's ad-blocker - the browser is responsible for that, not filters.
+
+**NOTE:** Some rules will not work with uBO-based built-in Brave Browser's ad-blocker - the browser is responsible for that, not filters.
 
