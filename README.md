@@ -10,7 +10,7 @@
 
 Zalecany bloker reklam: uBlock Origin.
 
-**UWAGA:** Niektóre reguły nie będą działały z opartym na uBO blokerem reklam przeglądarki Brave - problem ten leży po stronie przeglądarki, nie filtrów.
+**UWAGA:** Niektóre reguły mogą nie działać prawidłowo z opartym na uBO blokerem reklam przeglądarki Brave - jest to błąd leżący po stronie przeglądarki.
 
 ## EN
 
@@ -21,5 +21,4 @@ Zalecany bloker reklam: uBlock Origin.
 
 Recommended ad-blocker: uBlock Origin.
 
-**NOTE:** Some rules will not work with uBO-based built-in Brave Browser's ad-blocker - the browser is responsible for that, not filters.
-
+**NOTE:** Some of these rules may not work properly with uBO-based built-in Brave Browser's ad-blocker, and that's a browser's fault.
