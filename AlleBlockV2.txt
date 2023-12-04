@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste). Derived from original AlleBlock by @maciejtarmas.
-! Version: 2023.02
-! Date: 2023/12/02
+! Version: 2023.03
+! Date: 2023/12/04
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -178,12 +178,16 @@ allegrolokalnie.pl##.mlc-home-page-carousels
 allegrolokalnie.pl##.footer-banner
 allegrolokalnie.pl##div.mlc-site-footer__nav-section:has(a.mlc-site-footer__mobile-store-link)
 
+! Listings
 allegrolokalnie.pl##.phrases
 
 ! Offer page
 allegrolokalnie.pl##.mlc-offer__similar-offers
 allegrolokalnie.pl##.mlc-offer__sp-offers
 allegrolokalnie.pl##article[class^="mlc-offer__"]
+
+! After payment
+allegrolokalnie.pl##section[class*="mlc-smart-offers-carousel"]
 
 !---------------------------------------------------------------------------------
 
@@ -195,8 +199,9 @@ archiwum.allegro.pl##div[data-box-name="naAllegro"]
 ! Listings
 archiwum.allegro.pl##div[data-box-name="allegro.listing.left.popular.container"]
 archiwum.allegro.pl##div[data-box-name="allegro.listing.left.recentlyArchived.container"]
-archiwum.allegro.pl##div[data-box-name="left-ads-container"]
-archiwum.allegro.pl##div[data-box-name="banner.podzial"]
+archiwum.allegro.pl##div[data-box-name$="-ads-container"]
+archiwum.allegro.pl##div[data-box-name^="banner."]
+archiwum.allegro.pl##div[data-box-name="similar.searches.container"]
 ! Offer page
 archiwum.allegro.pl##div[data-box-name="title.container"]
 
