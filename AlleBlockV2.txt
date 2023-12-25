@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste). Derived from original AlleBlock by @maciejtarmas.
-! Version: 2023.05
-! Date: 2023/12/11
+! Version: 2023.06
+! Date: 2023/12/25
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -171,6 +171,7 @@ allegro.pl##div[data-box-name*="allegro-pay-container"]
 
 ! Allegro Lokalnie
 ! Main
+allegrolokalnie.pl##aside.mlc-top-header
 allegrolokalnie.pl##.mlc-home-page__greeting
 allegrolokalnie.pl##.mlc-home-page__hero-carousel
 allegrolokalnie.pl##.mlc-home-page__benefits
