@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste). Derived from original AlleBlock by @maciejtarmas.
-! Version: 2023.06
-! Date: 2023/12/25
+! Version: 2024.01
+! Date: 2024/01/05
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -15,7 +15,7 @@
 ! Main
 allegro.cz##div[data-box-name="Top header background"]
 allegro.pl##div[data-box-name="HP Redesign Content"]
-allegro.cz##div[data-box-name="HP CZ Content"]
+allegro.cz##div[data-box-name="HP International Content"]
 allegro.pl,allegro.cz##div[data-box-name="metrum-footer-partial-expander"]
 allegro.pl,allegro.cz##div[data-box-name="promoted.links.grid.container"]
 allegro.pl,allegro.cz##div[data-box-name="f-social"]
@@ -103,6 +103,7 @@ allegro.cz##div[data-box-name="section-campaigns-container"]
 allegro.cz##div[data-box-name="section-banner-container"]
 
 ! Listings
+allegro.pl##div[data-box-name="didYouMean"]
 allegro.pl,allegro.cz##div[data-box-name^="premium.with.dfp"]
 allegro.cz##article[data-analytics-view-custom-context="SPONSORED"]
 allegro.pl,~archiwum.allegro.pl##article:not([data-analytics-enabled])
@@ -182,6 +183,7 @@ allegrolokalnie.pl##div.mlc-site-footer__nav-section:has(a.mlc-site-footer__mobi
 
 ! Listings
 allegrolokalnie.pl##.phrases
+allegrolokalnie.pl##.mlc-listing__seo-text
 
 ! Offer page
 allegrolokalnie.pl##.mlc-offer__similar-offers
