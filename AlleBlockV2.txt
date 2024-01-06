@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste). Derived from original AlleBlock by @maciejtarmas.
-! Version: 2024.02
+! Version: 2024.02a
 ! Date: 2024/01/06
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
@@ -124,11 +124,12 @@ allegro.pl##div[data-box-name="podobne wyszukiwania kontener"]
 allegro.pl,allegro.cz##div[data-box-name^="Cobalt"]
 allegro.pl##div[data-box-name^="Cyan"]
 allegro.cz##div[data-box-name*="cyan"]
-allegro.pl##div[data-box-name="container.moreOf"]:upward(3)
+allegro.pl##div:has(> div > div > div[data-box-name="container.moreOf"])
 allegro.cz##div[data-box-name$="moreOf.browser"]
 allegro.pl##div[data-box-name="Seller Banner Container"]
 allegro.pl,allegro.cz##div[data-box-name="reco.bottom.container"]
 allegro.cz##div[data-box-name^="offers_reco_same_seller_pixel"]
+allegro.cz##div[data-box-name="Compatibility offers"]
 allegro.pl##div[data-box-name="allegro.oferta.carousel.container"]
 allegro.pl##div[data-box-name="Product series"]:upward(3)
 ! Sale ended
