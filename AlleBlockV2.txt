@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
-! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste). Derived from original AlleBlock by @maciejtarmas.
-! Version: 2024.02b
-! Date: 2024/02/20
+! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste).
+! Version: 2024.03
+! Date: 2024/02/25
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
-! [EN] NOTE: If you see any elements which should be hidden or blocked, or something does not work, please report it in the Issues section of GitHub repository: https://github.com/CrusheerPL/AlleBlockV2/issues
-!      NOTE: Some of these rules may not work properly with uBO-based built-in Brave Browser's ad-blocker.
-! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, stwórz zgłoszenie na stronie repozytorium GitHub w zakładce Issues: https://github.com/CrusheerPL/AlleBlockV2/issues
-!      UWAGA: Niektóre reguły mogą nie działać prawidłowo z opartym na uBO blokerem reklam przeglądarki Brave.
+! [EN] NOTE: If you see any elements which should be hidden or blocked, or something does not work, please report it there: https://github.com/CrusheerPL/AlleBlockV2/issues
+!      NOTE: Some of these rules may not work properly with built-in Brave Browser's ad-blocker.
+! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, daj znać na GitHubie: https://github.com/CrusheerPL/AlleBlockV2/issues
+!      UWAGA: Niektóre reguły mogą nie działać prawidłowo z wbudowanym blokerem reklam przeglądarki Brave.
 
 ! Allegro PL+CZ
 ! Main
@@ -26,6 +26,12 @@ allegro.pl##a[href^="/kampania"]
 ! Login + register
 allegro.pl##div[data-box-name="banner - cmuid"]:upward(2)
 allegro.pl###chat-container
+
+! Search bar
+allegro.pl##div#suggestions-listbox > a[href^="https://allegro.pl/dss-proxy/clicks?emission_unit_id="]
+
+! Full-screen surveys
+allegro.cz##div[data-box-name^="allegro.modal"]:has(div[data-box-name="allegro.survey"])
 
 ! Categories - PL
 ! General
@@ -52,11 +58,10 @@ allegro.pl##div[data-box-name="Oferta-oficjalnych-sklepow.image.container"]
 allegro.pl##div[data-box-name="Fall-Oferta-oficjalnych-sklepow.carousels"]
 ! Motoryzacja > Ogłoszenia motoryzacyjne
 allegro.pl##div[data-box-name^="Baner"]
-allegro.pl##div[data-box-name$="KARUZELA"]:upward(1)
-allegro.pl##div[data-box-name$="OFERTA_DNIA"]:upward(1)
+allegro.pl##div:has(> div[data-box-name$="KARUZELA"])
+allegro.pl##div:has(> div[data-box-name$="OFERTA_DNIA"])
 allegro.pl##div[data-box-name^="Belka wystawianie kontener główny"]
 allegro.pl##div[data-box-name="Promowane na dziale ogłoszeń"]
-allegro.pl##h2:has-text("Przyczepy, naczepy, maszyny"):upward(5)
 allegro.pl##div[data-box-name="Samochody osobowe- Nadwozia"]
 allegro.pl##div[data-box-name="LP Ogłoszenia - motocykle"]
 allegro.pl##div[data-box-name*="marki"]
@@ -96,7 +101,7 @@ allegro.pl##div[data-box-name="maszyny budowlane"]
 allegro.pl##div[data-box-name*="przemyslowe"]
 allegro.pl##div[data-box-name="Przyczepy i naczepy"]
 allegro.pl##div[data-box-name="Inne_pojazdy"]
-allegro.pl##h2:has-text("Maszyny dla profesjonalistów"):upward(5)
+allegro.pl##div[data-box-name="ogłoszenia"]:has(h2:has-text("Maszyny dla profesjonalistów"))
 
 ! Categories - CZ
 allegro.cz,archiwum.allegro.pl##div[data-box-name="lazy"]:not(:has(div[data-box-name="popularCategories"]))
@@ -107,6 +112,12 @@ allegro.cz##div[data-box-name="section-campaigns-container"]
 allegro.cz##div[data-box-name="section-banner-container"]
 
 ! Listings
+allegro.pl#@##search-results [data-analytics-view-label="BETTER_SORT_APPLIED"]:has(> button):style(position: absolute !important; z-index: 2147483647 !important; top: 240px !important; background: white !important)
+allegro.pl##div[data-box-name^="allegro.ads"]
+allegro.pl##section[data-analytics-view-label="AllegroPayListingBannerEligible"]
+allegro.pl##section[data-analytics-view-label="BestPriceGuaranteeBanner"]
+allegro.cz##div[data-analytics-view-label="BestPriceGuaranteeBanner"]
+allegro.pl##div[data-box-name="layout.container.adblock"]
 allegro.pl##div[data-box-name="didYouMean"]
 allegro.pl,allegro.cz##div[data-box-name^="premium.with.dfp"]
 allegro.cz##article[data-analytics-view-custom-context="SPONSORED"]
@@ -131,7 +142,7 @@ allegro.pl,allegro.cz##div[data-box-name="reco.bottom.container"]
 allegro.cz##div[data-box-name^="offers_reco_same_seller_pixel"]
 allegro.cz##div[data-box-name="Compatibility offers"]
 allegro.pl##div[data-box-name="allegro.oferta.carousel.container"]
-allegro.pl##div[data-box-name="Product series"]:upward(3)
+allegro.pl##div[data-box-name="Container Bottom"]
 ! Sale ended
 allegro.pl##div[data-box-name="Container carousel reco ended"]
 
@@ -210,7 +221,7 @@ archiwum.allegro.pl##div[data-box-name="naAllegro"]
 archiwum.allegro.pl##div[data-box-name="allegro.listing.left.popular.container"]
 archiwum.allegro.pl##div[data-box-name="allegro.listing.left.recentlyArchived.container"]
 archiwum.allegro.pl##div[data-box-name$="-ads-container"]
-!archiwum.allegro.pl##div[data-box-name^="banner."]
+archiwum.allegro.pl##div[data-box-name="banner.podzial"]
 archiwum.allegro.pl##div[data-box-name="similar.searches.container"]
 ! Offer page
 archiwum.allegro.pl##div[data-box-name="title.container"]
