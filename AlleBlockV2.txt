@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Always fresh filter list for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste).
-! Version: 2024.03
-! Date: 2024/02/25
+! Version: 2024.04
+! Date: 2024/05/12
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -11,14 +11,14 @@
 ! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, daj znać na GitHubie: https://github.com/CrusheerPL/AlleBlockV2/issues
 !      UWAGA: Niektóre reguły mogą nie działać prawidłowo z wbudowanym blokerem reklam przeglądarki Brave.
 
-! Allegro PL+CZ
+! Allegro PL+CZ+SK(WIP)
 ! Main
 allegro.cz##div[data-box-name="Top header background"]
 allegro.pl##div[data-box-name="HP Redesign Content"]
-allegro.cz##div[data-box-name="HP International Content"]
-allegro.pl,allegro.cz##div[data-box-name="metrum-footer-partial-expander"]
-allegro.pl,allegro.cz##div[data-box-name="promoted.links.grid.container"]
-allegro.pl,allegro.cz##div[data-box-name="f-social"]
+allegro.cz,allegro.sk##div[data-box-name="HP International Content"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name="metrum-footer-partial-expander"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name="promoted.links.grid.container"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name="f-social"]
 allegro.pl##div[data-box-name$="desktop-nav-links"]
 allegro.pl##div[data-group-id="header-layers-desktop_eBilet.pl"]
 allegro.pl##a[href^="/kampania"]
@@ -31,7 +31,7 @@ allegro.pl###chat-container
 allegro.pl##div#suggestions-listbox > a[href^="https://allegro.pl/dss-proxy/clicks?emission_unit_id="]
 
 ! Full-screen surveys
-allegro.cz##div[data-box-name^="allegro.modal"]:has(div[data-box-name="allegro.survey"])
+allegro.cz,allegro.sk##div[data-box-name^="allegro.modal"]:has(div[data-box-name="allegro.survey"])
 
 ! Categories - PL
 ! General
@@ -103,28 +103,28 @@ allegro.pl##div[data-box-name="Przyczepy i naczepy"]
 allegro.pl##div[data-box-name="Inne_pojazdy"]
 allegro.pl##div[data-box-name="ogłoszenia"]:has(h2:has-text("Maszyny dla profesjonalistów"))
 
-! Categories - CZ
-allegro.cz,archiwum.allegro.pl##div[data-box-name="lazy"]:not(:has(div[data-box-name="popularCategories"]))
-allegro.cz##div[data-box-name="section-fixed-container"]
-allegro.cz##div[data-box-name="ads-container"]
-allegro.cz##div[data-box-name="best-price-guarantee-container"]
-allegro.cz##div[data-box-name="section-campaigns-container"]
-allegro.cz##div[data-box-name="section-banner-container"]
+! Categories - CZ+SK
+allegro.cz,allegro.sk,archiwum.allegro.pl##div[data-box-name="lazy"]:not(:has(div[data-box-name="popularCategories"]))
+allegro.cz,allegro.sk##div[data-box-name="section-fixed-container"]
+allegro.cz,allegro.sk##div[data-box-name="ads-container"]
+allegro.cz,allegro.sk##div[data-box-name="best-price-guarantee-container"]
+allegro.cz,allegro.sk##div[data-box-name="section-campaigns-container"]
+allegro.cz,allegro.sk##div[data-box-name="section-banner-container"]
+allegro.cz##div[data-box-name="automated-discount-cz-container"]
 
 ! Listings
+allegro.pl##div[data-role="edu-tip"]
 allegro.pl#@##search-results [data-analytics-view-label="BETTER_SORT_APPLIED"]:has(> button):style(position: absolute !important; z-index: 2147483647 !important; top: 240px !important; background: white !important)
 allegro.pl##div[data-box-name^="allegro.ads"]
 allegro.pl##section[data-analytics-view-label="AllegroPayListingBannerEligible"]
 allegro.pl##section[data-analytics-view-label="BestPriceGuaranteeBanner"]
-allegro.cz##div[data-analytics-view-label="BestPriceGuaranteeBanner"]
 allegro.pl##div[data-box-name="layout.container.adblock"]
 allegro.pl##div[data-box-name="didYouMean"]
-allegro.pl,allegro.cz##div[data-box-name^="premium.with.dfp"]
-allegro.cz##article[data-analytics-view-custom-context="SPONSORED"]
-allegro.pl,~archiwum.allegro.pl##article:not([data-analytics-enabled])
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name^="premium.with.dfp"]
+allegro.pl,allegro.cz,allegro.sk##article:has(a[href*="/events/clicks?emission_unit_id"])
 allegro.pl##div[data-box-name="seoLazyBelowFilters"]
 allegro.pl##div[data-box-name^="allegro.advertising.adspremium"]
-allegro.pl,allegro.cz##div[data-box-name="rekomendacje"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name="rekomendacje"]
 allegro.pl##div[data-box-name="articles"]
 allegro.pl##div[data-box-name="kategorie komplementarne kontener"]
 allegro.pl##div[data-box-name="seo text container"]
@@ -132,15 +132,15 @@ allegro.pl##div[data-box-name="seo-custom-navigation-links"]
 allegro.pl##div[data-box-name="podobne wyszukiwania kontener"]
 
 ! Offer page
-allegro.pl,allegro.cz##div[data-box-name^="Cobalt"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name^="Cobalt"]
 allegro.pl##div[data-box-name^="Cyan"]
-allegro.cz##div[data-box-name*="cyan"]
+allegro.cz,allegro.sk##div[data-box-name*="cyan"]
 allegro.pl##div:has(> div > div > div[data-box-name="container.moreOf"])
-allegro.cz##div[data-box-name$="moreOf.browser"]
 allegro.pl##div[data-box-name="Seller Banner Container"]
-allegro.pl,allegro.cz##div[data-box-name="reco.bottom.container"]
-allegro.cz##div[data-box-name^="offers_reco_same_seller_pixel"]
-allegro.cz##div[data-box-name="Compatibility offers"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name="reco.bottom.container"]
+allegro.cz,allegro.sk##div[data-box-name^="offers_reco_same_seller_pixel"]
+allegro.pl,allegro.cz,allegro.sk##div:has(> div > div > div[data-box-name*="Carousel_reco_same_seller container"])
+allegro.cz,allegro.sk##div[data-box-name="Compatibility offers"]
 allegro.pl##div[data-box-name="allegro.oferta.carousel.container"]
 allegro.pl##div[data-box-name="Container Bottom"]
 ! Sale ended
@@ -200,7 +200,7 @@ allegrolokalnie.pl##div.mlc-site-footer__nav-section:has(a.mlc-site-footer__mobi
 ! Listings
 allegrolokalnie.pl##.phrases
 allegrolokalnie.pl##.mlc-listing__seo-text
-allegrolokalnie.pl##.mlc-share-button-tutorial-tooltip__trigger
+allegrolokalnie.pl##.mlc-share-button-tutorial-tooltip
 
 ! Offer page
 allegrolokalnie.pl##.mlc-offer__similar-offers
