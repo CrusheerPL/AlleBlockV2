@@ -1,23 +1,16 @@
-![alleblockv2alt](https://github.com/CrusheerPL/AlleBlockV2/assets/35576727/79e87a0b-55f1-415b-ae71-85aa687b9c6d)
+<h1 align="center">AlleBlockV2</h1>
+<p align="center">Najświeższy zestaw filtrów dla uBO/AdGuard usuwający i/bądź dezaktywujący zbędne, a także irytujące elementy portali ogłoszeniowych z grup Allegro (Allegro, Allegro Lokalnie, MALL*, mimovrste*) oraz OLX. Kontynuacja projektu <a href="https://github.com/maciejtarmas/AlleBlock"><i>AlleBlock</i></a> od @maciejtarmas.</p>
+<p align="center">Filtry te nie wpływają negatywnie na funkcjonowanie stron. Wręcz przeciwnie - zwiększają komfort ich użytkowania.</p>
+<p align="center">Do skutecznego działania listy zalecana jest wtyczka uBlock Origin lub AdGuard oraz lista <a href="https://polishannoyancefilters.netlify.app/"><i>Polskie Filtry Elementów Irytujących</i></a>; wbudowany bloker reklam przeglądarki Brave również powinien sobie poradzić.</p>
+<p align="center">Jeśli zauważyłeś/aś element do ukrycia lub zablokowania, bądź w przypadku, gdy filtry nie działają poprawnie, <a href="https://github.com/CrusheerPL/AlleBlockV2/issues">daj znać - za każde zgłoszenie serdecznie dziękujemy.</a></p>
 
-## PL
+<h5>* - prace nad wdrożeniem w toku.</h5>
 
-- Zawsze najświeższy zestaw filtrów dla ABP/uBO/AdGuard ukrywający bądź blokujący niepotrzebne i irytujące elementy portali ogłoszeniowych z Grupy Allegro (Allegro PL/CZ, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste).
-- Filtry nie wpływają negatywnie na działanie stron, wręcz przeciwnie - zwiększają komfort ich użytkowania.
-- Jest to nieoficjalna "kontynuacja" projektu [AlleBlock](https://github.com/maciejtarmas/AlleBlock) od @maciejtarmas, który przez dłuższy czas nie doczekał się aktualizacji.
-- Jeśli zauważyłeś/aś element do ukrycia lub zablokowania, bądź w przypadku, gdy filtry nie działają poprawnie, [daj znać w zakładce Issues.](https://github.com/CrusheerPL/AlleBlockV2/issues)
+<hr>
 
-Zalecany bloker reklam: uBlock Origin.
+<p align="center">The freshest uBO/AdGuard filter list which aims to hide and/or deactivate Allegro Group (Allegro, Allegro Lokalnie, MALL*, mimovrste*) & OLX websites annoyances. Derived from <a href="https://github.com/maciejtarmas/AlleBlock"><i>AlleBlock</i> project</a> by @maciejtarmas.</p>
+<p align="center">No negative impact on sites' functionality.</p>
+<p align="center">For best performance, the uBlock Origin or AdGuard plugin and the <i>Polish Annoyance Filters</i> list are strongly recommended. Also, the built-in Brave Browser's ad-blocker can be used.</p>
+<p align="center">Have an element to hide or block, or something does not work properly? <a href="https://github.com/CrusheerPL/AlleBlockV2/issues">Let me know! Thanks a lot for your help.</a></p>
 
-**UWAGA:** Niektóre reguły mogą nie działać prawidłowo z wbudowanym w przeglądarkę Brave blokerem reklam - te zostaną poprawione pod tym kątem w kolejnych aktualizacjach.
-
-## EN
-
-- Always fresh filter set for ABP/uBO/AdGuard hiding unnecessary & irritative elements of advertising portals from Allegro Group (Allegro PL/CZ, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste).
-- No negative impact on sites' functionality.
-- Derived from original [AlleBlock](https://github.com/maciejtarmas/AlleBlock) by @maciejtarmas which is not being updated for a long time.
-- Have an element to hide or block, or something does not work properly? [Let me know in the Issues section.](https://github.com/CrusheerPL/AlleBlockV2/issues)
-
-Recommended ad-blocker: uBlock Origin.
-
-**NOTE:** Some of these rules may not work properly with built-in Brave Browser's ad-blocker - these will be fixed soon with next updates.
+<h5>* - work in progress.</h5>
