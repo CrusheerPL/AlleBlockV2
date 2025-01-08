@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.01
-! Date: 2025/01/06
+! Version: 2025.02
+! Date: 2025/01/08
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -284,14 +284,33 @@ mall.sk##h6:has-text("Môže sa hodiť"):upward(1)
 !---------------------------------------------------------------------------------
 
 ! OLX BG/PL/PT/RO/UA
+! Main
 olx.*###banner
-olx.*##div[id^="tippy-"]
-olx.*##.css-1mjm1vu
-olx.*##.laq-survey
+olx.*##a[data-testid^="cat-promo-"]
+olx.*##div#searchmain-container > div:not(:has(form[data-testid="search-form"])):not(:has(div[data-testid="home-categories-menu"]))
+
+! Listings
 olx.*##form > div:has(div[data-testid="loyalty-banner-wrapper"])
-olx.*##div.listing-grid-container > div > div:has(button)
+olx.*##div.listing-grid-container > div > div:has(button[data-cy="l-save-search-banner-button"])
 olx.*##div.listing-grid-container > div > div:has(div[font-weight])
 olx.*##div[data-cy^="seo-"]
 olx.*##p[data-cy="description-text"]
-olx.*##+js(abort-on-stack-trace, scrollTo, '82152.d53fae4e6.chunk.js')
+olx.*##p[data-testid="disclaimer-description"]
+! OLX Magic animated button (PL exclusive)
 olx.pl##a[href*="magic.olx.pl"]
+
+! Offer page
+olx.*##a[href$="/home/"]:has(img)
+olx.*##section[data-cy="ad-recommendations"]
+olx.pl##a:has(picture[data-testid="responsive-apollo-img"])
+
+! General/Misc
+olx.*##div#footerContent > div > div > div:has(a[href*="google"])
+! Annoyance: tooltip
+olx.*##div[id^="tippy-"]
+! Annoyance: survey
+olx.*##.laq-survey
+! Annoyance: "new" "notification" animation
+olx.*##.css-1mjm1vu
+! Annoyance: auto-scroll-to-top-when-loaded "feature"
+olx.*##+js(set, window.scrollTo, noopFunc)
