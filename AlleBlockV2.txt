@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.02b
-! Date: 2025/01/08
+! Version: 2025.03
+! Date: 2025/02/04
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -133,6 +133,12 @@ allegro.pl,allegro.cz##div[data-box-name="seo text container"]
 allegro.pl##div[data-box-name="podobne wyszukiwania kontener"]
 allegro.pl##div[data-box-name$="queryUnderstandingCarousel"]
 
+! Empty search results
+allegro.pl,allegro.cz##div[data-box-name^="ESR_categories.suggester"]
+allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="ESR_alternatives.suggester"]
+allegro.pl,allegro.cz##div[data-box-name^="ESR_recommendation.container"]
+allegro.pl,allegro.cz##div[data-box-name^="ESR_articles.container"]
+
 ! Sellers
 allegro.cz,allegro.sk,allegro.hu##div#sideBanner
 allegro.cz,allegro.sk##div#richText
@@ -224,6 +230,7 @@ allegrolokalnie.pl##.mlc-share-button-tutorial-tooltip
 allegrolokalnie.pl##.offer-conditions--top
 allegrolokalnie.pl##.mlc-listing__seo-text--top
 allegrolokalnie.pl##section.mlc-suggested-cities
+allegrolokalnie.pl##div.mlc-last-viewed-offers
 allegrolokalnie.pl##+js(set-cookie, adultContentBlockageModal, accepted)
 
 ! Offer page
