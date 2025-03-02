@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
-! Description: uBO/AdGuard filter list which aims to hide and/or deactivate Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.03
-! Date: 2025/02/04
+! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
+! Version: 2025.04
+! Date: 2025/03/02
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -143,6 +143,9 @@ allegro.pl,allegro.cz##div[data-box-name^="ESR_articles.container"]
 allegro.cz,allegro.sk,allegro.hu##div#sideBanner
 allegro.cz,allegro.sk##div#richText
 
+! Product page
+allegro.pl##div[data-box-name="similar products"]
+
 ! Offer page
 allegro.cz,allegro.sk,allegro.hu##div[data-box-name="allegro.sis.header"]
 allegro.pl,allegro.cz,allegro.sk##div[data-box-name^="Cobalt"]
@@ -167,15 +170,20 @@ allegro.pl##div[data-box-name="Automotive"]
 allegro.pl##div[data-box-name="Container carousel reco ended"]
 
 ! Thank you for your purchases
-! TODO: Allegro CZ - samples needed
+! TODO: Allegro CZ/SK/HU - samples needed
 allegro.pl,allegro.cz##div[data-box-name*="adblockDetector"]
 allegro.pl##div[data-box-name="marketing.consent.container"]
 allegro.pl##div[data-box-name*="allegro-pay-container"]
+allegro.pl##div[data-box-name="booster-mobile-container"]
+allegro.pl##div[data-box-name="reco-grid"]
 
 ! Visual fixes
 allegro.pl##div[data-box-name="allegro.navigation.scrollTop"]:style(margin-bottom: 30px !important)
 allegro.pl##div[data-box-name="NAWIGACJA"]:style(margin-bottom: 30px !important)
 allegro.pl##div[data-box-name="Container Parameters"]:style(margin-bottom: 30px !important)
+
+! Others (to be categorized if possible)
+allegro.pl##div#recoSlotId
 
 ! Scripts, trackers & resources (snippets from AlleBlock ver. 2021_ROLLING_LIVE by @maciejtarmas - CC BY-NC 4.0)
 ! NOTE: original filters have not been updated for a long time, so proper operation is not guaranteed
@@ -304,8 +312,9 @@ olx.*##div[data-cy^="seo-"]
 olx.*##div[data-testid^="seo-"]
 olx.*##p[data-cy="description-text"]
 olx.*##p[data-testid="disclaimer-description"]
-! OLX Magic animated button (PL exclusive)
+! PL exclusive
 olx.pl##a[href*="magic.olx.pl"]
+olx.pl##div[data-testid="company-profile-employers-carousel-root"]
 
 ! Offer page
 olx.*##a[href$="/home/"]:has(img)
