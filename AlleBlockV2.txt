@@ -178,7 +178,7 @@ allegro.pl##div[data-box-name*="allegro-pay-container"]
 allegro.pl##div[data-box-name="booster-mobile-container"]
 allegro.pl##div[data-box-name="reco-grid"]
 
-! 404
+! err 404
 allegro.pl##div[data-box-name="new.error"] > div > div > div[data-box-name="category"],div[data-box-name="article"],div[data-box-name="Card"]
 
 ! Visual fixes
