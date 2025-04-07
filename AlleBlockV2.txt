@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.09
+! Version: 2025.09b
 ! Date: 2025/04/07
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
@@ -267,7 +267,7 @@ allegrolokalnie.pl##section[class*="mlc-smart-offers-carousel"]
 ! 404
 allegrolokalnie.pl##div[data-box-name="lokalnie.topHeader"]
 allegrolokalnie.pl##div[data-box-name="lokalnie.footer"] > aside
-allegrolokalnie.pl##._wrapper_nEnuK
+allegrolokalnie.pl##div[data-box-name="lokalnie.errorState"] > div > div > div._wrapper_nEnuK
 allegrolokalnie.pl##article:has(a[href*="play.google.com"])
 
 !---------------------------------------------------------------------------------
