@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.11
-! Date: 2025/05/23
+! Version: 2025.12
+! Date: 2025/07/03
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -331,6 +331,7 @@ olx.*##div[data-cy^="seo-"]
 olx.*##div[data-testid^="seo-"]
 olx.*##p[data-cy="description-text"]
 olx.*##p[data-testid="disclaimer-description"]
+olx.*##div[data-cy="l-card"]:has(div:has-text(/Wyróżnione|TOP|PROMOVAT|ТОП|Промотирана обява/))
 ! PL exclusive
 olx.pl##a[href*="magic.olx.pl"]
 olx.pl##div[data-testid="company-profile-employers-carousel-root"]
@@ -346,7 +347,6 @@ olx.*##div#footerContent > div > div > div:has(a[href*="google"])
 olx.*##div[id^="tippy-"]
 ! Annoyance: survey
 olx.*##.laq-survey
-olx.*##.modal-root
 ! Annoyance: "new" "notification" animation
 olx.*##.css-1mjm1vu
 ! Annoyance: auto-scroll-to-top-when-loaded "feature"
