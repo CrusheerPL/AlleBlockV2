@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.13
-! Date: 2025/07/13
+! Version: 2025.14
+! Date: 2025/08/03
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -39,6 +39,8 @@ allegro.pl##div[data-box-name="allegro.navigation.layers.row2.column4"]
 allegro.pl##div[data-box-name="layout.container.row2.column"]
 allegro.pl##div[data-box-name="structure-container"]
 allegro.pl##div[data-box-name="rankingi"]
+allegro.pl##div[data-role="BRANDS_SECTION"]
+allegro.pl##div[data-box-name="Showcase"]
 allegro.pl##div[data-box-name*="showcase"]
 allegro.pl##div[data-box-name*="Promoted"]
 allegro.pl##div[data-box-name*="SEO"]
@@ -73,6 +75,7 @@ allegro.pl##div[data-box-name^="najnowsze artykuly"]
 allegro.pl##div[data-box-name="inspiracje motoryzacji"]
 allegro.pl##div[data-box-name="Linki wewnętrzne"]
 allegro.pl##div[data-box-name="INFO"]
+allegro.pl##div[data-box-name="Programy aut używanych"]
 ! Motoryzacja > Opony
 allegro.pl##div[data-box-name^="TABS-OPONY"]
 allegro.pl##div[data-box-name="Opony całoroczne"]
@@ -135,6 +138,8 @@ allegro.pl,allegro.cz##div[data-box-name="seo text container"]
 allegro.pl##div[data-box-name="podobne wyszukiwania kontener"]
 allegro.pl##div[data-box-name$="queryUnderstandingCarousel"]
 allegro.pl##div[data-box-name="rekomendacje-lazy"]
+allegro.pl##div[data-box-name="AggregatedFiltersCategoryListing"]
+allegro.pl##div[data-box-name="popularne miasta mob"]
 
 ! Empty search results
 allegro.pl,allegro.cz##div[data-box-name^="ESR_categories.suggester"]
@@ -153,7 +158,7 @@ allegro.pl##div[data-box-name="similar products"]
 allegro.cz,allegro.sk,allegro.hu##div[data-box-name="allegro.sis.header"]
 allegro.pl,allegro.cz,allegro.sk##div[data-box-name^="Cobalt"]
 allegro.pl##div[data-box-name^="Cyan"]
-allegro.cz,allegro.sk##div[data-box-name*="cyan"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name*="cyan"]
 allegro.cz,allegro.hu##div[data-box-name^="Eager"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-analytics-groups*="allegro.ads"]
 allegro.pl##div[data-box-name="Offer bundles"]
@@ -170,9 +175,10 @@ allegro.pl##div[data-box-name="Container Bottom"]
 allegro.pl##div[data-box-name="Bars"]
 allegro.pl##div[data-box-name="Automotive"]
 allegro.pl##div[data-box-name="infinite-feed.carousel.wrapper"]
-! new quasi-experiments - regionalization was needed
+allegro.pl##div[data-box-name="Container Top PPC Offers"]
+allegro.pl##div[data-box-name="forbidden categories"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="caro"]
-allegro.pl##div[data-box-name="layout.container"] > div > div > div:has(h2:has-text(Propozycje dla Ciebie))
+allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:has(h2:has-text(Propozycje dla Ciebie))
 allegro.cz,allegro.sk##div[data-box-name="Layout"] > div > div > div:has(h2:has-text(/[DĎ]alš[íi](?:e | )od:/))
 allegro.hu##div[data-box-name="Layout"] > div > div > div:has(h2:has-text(Egyéb a következőktől:))
 ! Sale ended
@@ -188,7 +194,7 @@ allegro.pl##div[data-box-name="booster-mobile-container"]
 allegro.pl##div[data-box-name="reco-grid"]
 
 ! err 404
-allegro.pl##div[data-box-name="new.error"] > div > div > div[data-box-name="category"]
+allegro.pl##div[data-box-name="new.error"] > div > div > div[data-box-name="verticals"]
 allegro.pl##div[data-box-name="new.error"] > div > div > div[data-box-name="article"]
 allegro.pl##div[data-box-name="new.error"] > div > div > div[data-box-name="Card"]
 
@@ -196,6 +202,7 @@ allegro.pl##div[data-box-name="new.error"] > div > div > div[data-box-name="Card
 allegro.pl##div[data-box-name="allegro.navigation.scrollTop"]:style(margin-bottom: 30px !important)
 allegro.pl##div[data-box-name="NAWIGACJA"]:style(margin-bottom: 30px !important)
 allegro.pl##div[data-box-name="Container Parameters"]:style(margin-bottom: 30px !important)
+allegro.pl##div[data-box-name="lista-opony1m"] > div > div > a:remove-attr(style)
 
 ! Others (to be categorized if possible)
 allegro.pl##div#recoSlotId
