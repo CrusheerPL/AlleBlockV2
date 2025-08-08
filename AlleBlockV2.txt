@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.14
-! Date: 2025/08/03
+! Version: 2025.15
+! Date: 2025/08/08
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -110,7 +110,7 @@ allegro.pl##div[data-box-name="Przyczepy i naczepy"]
 allegro.pl##div[data-box-name="Inne_pojazdy"]
 allegro.pl##div[data-box-name="ogłoszenia"]:has(h2:has-text("Maszyny dla profesjonalistów"))
 
-! Categories - others
+! Categories - other markets
 allegro.pl,allegro.cz,allegro.sk##div[data-box-name="allegro.navigation.layers.brands.container"]
 allegro.cz,allegro.sk##div[data-box-name="allegro-days-container"]
 allegro.cz,allegro.sk##div[data-box-name="allegro-days-allediscount-container"]
@@ -119,8 +119,12 @@ allegro.cz,allegro.sk##div[data-box-name="ads-container"]
 allegro.cz,allegro.sk##div[data-box-name="best-price-guarantee-container"]
 allegro.cz,allegro.sk##div[data-box-name="section-banner-container"]
 allegro.cz##div[data-box-name="automated-discount-cz-container"]
+allegro.cz,allegro.sk,allegro.hu##div[data-box-name="ALLEGRO DAYS"]
+allegro.cz,allegro.sk,allegro.hu##div[data-box-name="DEFAULT"]
+allegro.cz,allegro.sk,allegro.hu##div[data-box-name="LAZY"]
 
 ! Listings
+allegro.pl##div.opbox-listing > div > ul > li:has(source[srcset*="artificial"])
 allegro.pl##div[data-box-name="layout.container.dynamicQueryNarrowing"]
 allegro.pl,allegro.cz##div[data-role="edu-tip"]
 allegro.pl##div[data-box-name^="allegro.ads"]
@@ -135,8 +139,8 @@ allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="rekomendacje"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="articles"]
 allegro.pl,allegro.cz##div[data-box-name="kategorie komplementarne kontener"]
 allegro.pl,allegro.cz##div[data-box-name="seo text container"]
-allegro.pl##div[data-box-name="podobne wyszukiwania kontener"]
-allegro.pl##div[data-box-name$="queryUnderstandingCarousel"]
+allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="podobne wyszukiwania kontener"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name*="queryUnderstandingCarousel"]
 allegro.pl##div[data-box-name="rekomendacje-lazy"]
 allegro.pl##div[data-box-name="AggregatedFiltersCategoryListing"]
 allegro.pl##div[data-box-name="popularne miasta mob"]
@@ -179,8 +183,8 @@ allegro.pl##div[data-box-name="Container Top PPC Offers"]
 allegro.pl##div[data-box-name="forbidden categories"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="caro"]
 allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:has(h2:has-text(Propozycje dla Ciebie))
-allegro.cz,allegro.sk##div[data-box-name="Layout"] > div > div > div:has(h2:has-text(/[DĎ]alš[íi](?:e | )od:/))
-allegro.hu##div[data-box-name="Layout"] > div > div > div:has(h2:has-text(Egyéb a következőktől:))
+allegro.cz,allegro.sk##main#main-content > div > div > div:has(h2:has-text(/[DĎ]alš[íi](?:e | )od:/))
+allegro.hu##main#main-content > div > div > div:has(h2:has-text(Egyéb a következőktől:))
 ! Sale ended
 allegro.pl##div[data-box-name="Container carousel reco ended"]
 allegro.pl##div[data-box-name="Layout"] > div > div > div:not([data-box-name])
