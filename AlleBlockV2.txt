@@ -1,13 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2025.15
-! Date: 2025/08/08
+! Version: 2026.1
+! Date: 2026/02/15
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
 ! [EN] NOTE: If you see any elements which should be hidden or blocked, or something does not work, please report it there: https://github.com/CrusheerPL/AlleBlockV2/issues
 ! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, daj znać na GitHubie: https://github.com/CrusheerPL/AlleBlockV2/issues
+
+! To be cleaned up from non-effective rules.
 
 ! Allegro PL/CZ/SK/HU
 ! Main
@@ -23,6 +25,7 @@ allegro.pl##div[data-group-id="header-layers-desktop_eBilet.pl"]
 allegro.pl##a[href^="/kampania"]
 allegro.hu##a[href*="/kampan"]
 allegro.pl##div[data-box-name="cart.empty.carousel"]
+allegro.sk,allegro.hu##div[data-box-name="Top header background"]
 
 ! Login + register
 allegro.pl###chat-container
@@ -126,7 +129,7 @@ allegro.cz,allegro.sk,allegro.hu##div[data-box-name="LAZY"]
 ! Listings
 allegro.pl##div.opbox-listing > div > ul > li:has(source[srcset*="artificial"])
 allegro.pl##div[data-box-name="layout.container.dynamicQueryNarrowing"]
-allegro.pl,allegro.cz##div[data-role="edu-tip"]
+allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-role="edu-tip"]
 allegro.pl##div[data-box-name^="allegro.ads"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div.opbox-listing > div > div:not(:has(section))
 allegro.cz,allegro.sk##section[data-analytics-view-label="BestPriceGuaranteeBanner"]
@@ -185,12 +188,18 @@ allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="caro"]
 allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:has(h2:has-text(Propozycje dla Ciebie))
 allegro.cz,allegro.sk##main#main-content > div > div > div:has(h2:has-text(/[DĎ]alš[íi](?:e | )od:/))
 allegro.hu##main#main-content > div > div > div:has(h2:has-text(Egyéb a következőktől:))
+allegro.pl##main#main-content:not([data-box-name="listing"]) > div > div > div:not([data-box-name])
+! ^ alternative: allegro.pl##main#main-content[data-prototype-id="layout.container"] > div > div > div:not([data-box-name])
+allegro.pl##div[data-box-name="infinite-feed.wrapper"]
+! ai slop
+allegro.pl##div[data-box-name="Upsell Container"]
 ! Sale ended
 allegro.pl##div[data-box-name="Container carousel reco ended"]
 allegro.pl##div[data-box-name="Layout"] > div > div > div:not([data-box-name])
 
 ! Thank you for your purchases
 ! TODO: Allegro CZ/SK/HU - samples needed
+allegro.pl##div[data-box-name="allegro.transaction.thankyou.payment"] > div > div:nth-child(2) > div:not([data-box-name])
 allegro.pl,allegro.cz##div[data-box-name*="adblockDetector"]
 allegro.pl##div[data-box-name="marketing.consent.container"]
 allegro.pl##div[data-box-name*="allegro-pay-container"]
@@ -291,7 +300,7 @@ allegrolokalnie.pl##article:has(a[href*="play.google.com"])
 
 !---------------------------------------------------------------------------------
 
-! Archiwum Allegro
+! Archiwum Allegro - zostanie wyłączone w marcu '26 - will be deprecated
 ! Main
 archiwum.allegro.pl##div[data-box-name^="modal"]
 archiwum.allegro.pl##div[data-box-name^="layout.container.recommendations"]
@@ -348,7 +357,9 @@ olx.*##div[data-cy^="seo-"]
 olx.*##div[data-testid^="seo-"]
 olx.*##p[data-cy="description-text"]
 olx.*##p[data-testid="disclaimer-description"]
-olx.*##div[data-cy="l-card"]:has(div:has-text(/Wyróżnione|TOP|PROMOVAT|ТОП|Промотирана обява/))
+olx.*##div[class*="baxter-placeholder--ads"]
+! https://wykop.pl/wpis/84634051/wczesniej-sobie-latwo-adguardem-ukrywalem-powtarza
+olx.*##div[data-cy="l-card"]:has(a[href*="search_reason=search%7Cpromoted"])
 ! PL exclusive
 olx.pl##a[href*="magic.olx.pl"]
 olx.pl##div[data-testid="company-profile-employers-carousel-root"]
