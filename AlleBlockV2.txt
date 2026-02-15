@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2026.1b
+! Version: 2026.1c
 ! Date: 2026/02/15
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
@@ -187,6 +187,7 @@ allegro.pl##div[data-box-name="Container Top PPC Offers"]
 allegro.pl##div[data-box-name="forbidden categories"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="caro"]
 allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:has(h2:has-text(Propozycje dla Ciebie))
+allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:has(h2:has-text(Inne od:))
 allegro.cz,allegro.sk##main#main-content > div > div > div:has(h2:has-text(/[DĎ]alš[íi](?:e | )od:/))
 allegro.hu##main#main-content > div > div > div:has(h2:has-text(Egyéb a következőktől:))
 allegro.pl##main#main-content:not([data-box-name="listing"]) > div > div > div:not([data-box-name])
