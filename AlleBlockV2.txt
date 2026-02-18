@@ -1,10 +1,12 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
-! Description: uBO/AdGuard filter list which aims to hide and/or deactivate vastly most of Allegro Group (Allegro, Allegro Lokalnie, MALL CZ/SK/HU/HR, mimovrste) & OLX websites annoyances.
-! Version: 2026.2b
-! Date: 2026/02/16
+! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
+! Version: 2026.3
+! Date: 2026/02/18
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
+
+! Aktualizowana na bieżąco lista filtrów dla uBO/AdGuard mająca na celu zwiększenie komfortu korzystania z platform Allegro, OLX i innych poprzez ukrycie lub dezaktywację elementów zbędnych bądź irytujących.
 
 ! [EN] NOTE: If you see any elements which should be hidden or blocked, or something does not work, please report it there: https://github.com/CrusheerPL/AlleBlockV2/issues
 ! [PL] UWAGA: Jeśli zauważysz element(y), które powinny zostać ukryte, bądź gdy poniższe filtry nie działają poprawnie, daj znać na GitHubie: https://github.com/CrusheerPL/AlleBlockV2/issues
@@ -161,6 +163,7 @@ allegro.cz,allegro.sk##div#richText
 
 ! Product page
 allegro.pl##div[data-box-name="similar products"]
+allegro.pl##div[data-box-name="similar offers"]
 
 ! Offer page
 allegro.cz,allegro.sk,allegro.hu##div[data-box-name="allegro.sis.header"]
@@ -196,6 +199,8 @@ allegro.pl##div[data-box-name="infinite-feed.wrapper"]
 allegro.pl##div[data-box-name="Upsell Container"]
 ! "Added to basket" popup
 allegro.pl##div[data-box-name="precart-recommendations"]
+! Opinions section
+allegro.pl##div[data-testid="featuresFilter"]
 ! Sale ended
 allegro.pl##div[data-box-name="Container carousel reco ended"]
 allegro.pl##div[data-box-name="Layout"] > div > div > div:not([data-box-name])
@@ -385,3 +390,11 @@ olx.*##.laq-survey
 olx.*##.css-1mjm1vu
 ! Annoyance: auto-scroll-to-top-when-loaded "feature"
 olx.*##+js(set, window.scrollTo, noopFunc)
+
+!---------------------------------------------------------------------------------
+
+! Vinted
+vinted.*##+js(set-cookie, is_shipping_fees_applied_info_banner_dismissed, true)
+vinted.*##+js(set-local-storage-item, search_by_image_interacted_count, 2)
+vinted.*##.sidebar-container
+vinted.*##div[data-testid^="closet-promotion"]
