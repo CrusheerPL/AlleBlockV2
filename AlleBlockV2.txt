@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.3
-! Date: 2026/02/18
+! Version: 2026.4
+! Date: 2026/02/24
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -189,10 +189,9 @@ allegro.pl##div[data-box-name="infinite-feed.carousel.wrapper"]
 allegro.pl##div[data-box-name="Container Top PPC Offers"]
 allegro.pl##div[data-box-name="forbidden categories"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="caro"]
-allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:has(h2:has-text(Propozycje dla Ciebie))
-allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:has(h2:has-text(Inne od:))
 allegro.cz,allegro.sk##main#main-content > div > div > div:has(h2:has-text(/[DĎ]alš[íi](?:e | )od:/))
 allegro.hu##main#main-content > div > div > div:has(h2:has-text(Egyéb a következőktől:))
+allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:not([data-box-name])
 allegro.pl##main#main-content:not([data-box-name="listing"],[data-box-name="allegro.cart.view"]) > div > div > div:not([data-box-name])
 allegro.pl##div[data-box-name="infinite-feed.wrapper"]
 ! ai slop
