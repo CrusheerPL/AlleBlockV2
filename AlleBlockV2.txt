@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.4
-! Date: 2026/02/24
+! Version: 2026.5
+! Date: 2026/02/25
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -379,7 +379,12 @@ olx.*##a[href$="/home/"]:has(img)
 olx.*##section[data-cy="ad-recommendations"]
 olx.pl##a:has(picture[data-testid="responsive-apollo-img"])
 
+! Your account
+olx.*##+js(set-local-storage-item, dop_onb_popup_shown, true)
+olx.*##div[data-testid="onboarding-banner"]
+
 ! General/Misc
+olx.*##.baxter-container
 olx.*##div#footerContent > div > div > div:has(a[href*="google"])
 ! Annoyance: tooltip
 olx.*##div[id^="tippy-"]
