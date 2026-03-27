@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.7
-! Date: 2026/03/17
+! Version: 2026.8
+! Date: 2026/03/27
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -130,7 +130,6 @@ allegro.cz,allegro.sk,allegro.hu##div[data-box-name="DEFAULT"]
 allegro.cz,allegro.sk,allegro.hu##div[data-box-name="LAZY"]
 
 ! Listings
-allegro.pl##div.opbox-listing > div > ul > li:has(source[srcset*="artificial"])
 allegro.pl##div[data-box-name$="dynamicQueryNarrowing"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-role="edu-tip"]
 allegro.pl##div[data-box-name^="allegro.ads"]
@@ -195,8 +194,6 @@ allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showpr
 allegro.pl##div[data-box-name="showproduct.content"] > div > div > div:not([data-box-name])
 allegro.pl##main#main-content:not([data-box-name="listing"],[data-box-name="allegro.cart.view"]) > div > div > div:not([data-box-name])
 allegro.pl##div[data-box-name="infinite-feed.wrapper"]
-! ai slop
-allegro.pl##div[data-box-name="Upsell Container"]
 ! "Added to basket" popup
 allegro.pl##div[data-box-name="precart-recommendations"]
 ! Opinions section
@@ -227,6 +224,12 @@ allegro.pl##div[data-box-name="allegro.navigation.scrollTop"]:style(margin-botto
 allegro.pl##div[data-box-name="NAWIGACJA"]:style(margin-bottom: 30px !important)
 allegro.pl##div[data-box-name="Container Parameters"]:style(margin-bottom: 30px !important)
 allegro.pl##div[data-box-name="lista-opony1m"] > div > div > a:remove-attr(style)
+
+! ai slop
+allegro.pl##div.opbox-listing > div > ul > li:has(source[srcset*="artificial"])
+allegro.pl##div[data-testid="optimizer-content"]
+allegro.pl##div[data-box-name^="allegro.ai"]
+allegro.pl##div[data-box-name="Upsell Container"]
 
 ! Others (to be categorized if possible)
 allegro.pl##div#recoSlotId
