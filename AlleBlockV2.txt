@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.9
-! Date: 2026/04/02
+! Version: 2026.10
+! Date: 2026/04/03
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -21,6 +21,7 @@ allegro.cz,allegro.sk,allegro.hu##div[data-box-name="HP International Content"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="metrum-footer-partial-expander"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="promoted.links.grid.container"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="f-social"]
+allegro.pl,allegro.cz,allegro.sk##div[data-box-name^="Topbanner_"]
 allegro.hu##div[data-box-name="mallAttentioner"]
 allegro.pl##div[data-box-name$="desktop-nav-links"]
 allegro.pl##div[data-group-id="header-layers-desktop_eBilet.pl"]
@@ -185,11 +186,13 @@ allegro.pl##div[data-box-name="Container Bottom"]
 allegro.pl##div[data-box-name="Bars"]
 allegro.pl##div[data-box-name="Automotive"]
 allegro.pl##div[data-box-name="infinite-feed.carousel.wrapper"]
-allegro.pl##div[data-box-name="Container Top PPC Offers"]
+allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="Container Top PPC Offers"]
+allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="desk"][data-analytics-groups*="allegro.oferta.mweb"] > div > div > div > div > div > div:not([data-box-name])
 allegro.pl##div[data-box-name="forbidden categories"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="caro"]
 allegro.cz,allegro.sk##main#main-content > div > div > div:has(h2:has-text(/[DĎ]alš[íi](?:e | )od:/))
 allegro.hu##main#main-content > div > div > div:has(h2:has-text(Egyéb a következőktől:))
+allegro.pl##div[data-box-name^="allegro.app.promotion."]
 allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:not([data-box-name])
 allegro.pl##div[data-box-name="showproduct.content"] > div > div > div:not([data-box-name])
 allegro.pl##main#main-content:not([data-box-name="listing"],[data-box-name="allegro.cart.view"]) > div > div > div:not([data-box-name])
@@ -317,19 +320,12 @@ allegrolokalnie.pl##article:has(a[href*="play.google.com"])
 
 !---------------------------------------------------------------------------------
 
-! Archiwum Allegro - zostanie wyłączone w marcu '26 - will be deprecated
-! Main
-archiwum.allegro.pl##div[data-box-name^="modal"]
-archiwum.allegro.pl##div[data-box-name^="layout.container.recommendations"]
-archiwum.allegro.pl##div[data-box-name="naAllegro"]
-! Listings
-archiwum.allegro.pl##div[data-box-name="allegro.listing.left.popular.container"]
-archiwum.allegro.pl##div[data-box-name="allegro.listing.left.recentlyArchived.container"]
-archiwum.allegro.pl##div[data-box-name$="-ads-container"]
-archiwum.allegro.pl##div[data-box-name="banner.podzial"]
-archiwum.allegro.pl##div[data-box-name="similar.searches.container"]
-! Offer page
-archiwum.allegro.pl##div[data-box-name="title.container"]
+! Allegro Gadane
+! Survey
+spolecznosc.allegro.pl##.lia-panel-dialog-modal-valuesurvey
+spolecznosc.allegro.pl##.ui-widget-overlay
+spolecznosc.allegro.pl##.lia-value-survey-link
+spolecznosc.allegro.pl##.lia-iframe-shim
 
 !---------------------------------------------------------------------------------
 
