@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.10
-! Date: 2026/04/03
+! Version: 2026.11
+! Date: 2026/04/09
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -147,6 +147,7 @@ allegro.pl,allegro.cz##div[data-box-name="kategorie komplementarne kontener"]
 allegro.pl,allegro.cz##div[data-box-name="seo text container"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="podobne wyszukiwania kontener"]
 allegro.pl,allegro.cz,allegro.sk##div[data-box-name*="queryUnderstandingCarousel"]
+allegro.pl##div.opbox-listing > div > ul > li:not(:has(> article))
 allegro.pl##div[data-box-name="rekomendacje-lazy"]
 allegro.pl##div[data-box-name="AggregatedFiltersCategoryListing"]
 allegro.pl##div[data-box-name="popularne miasta mob"]
@@ -360,7 +361,7 @@ mall.sk##h6:has-text("Môže sa hodiť"):upward(1)
 ! Main
 olx.*###banner
 olx.*##a[data-testid^="cat-promo-"]
-olx.*##div#searchmain-container > div:not(:has(form[data-testid="search-form"])):not(:has(div[data-testid="home-categories-menu"]))
+olx.*##div#searchmain-container > div:not(:has(form)):not(:has(div[data-testid="home-categories-menu"]))
 
 ! Listings
 olx.*##form > div:has(div[data-testid="loyalty-banner-wrapper"])
