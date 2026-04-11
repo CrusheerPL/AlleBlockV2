@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.11
-! Date: 2026/04/09
+! Version: 2026.12
+! Date: 2026/04/11
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -206,8 +206,8 @@ allegro.pl##div[data-testid="featuresFilter"]
 allegro.pl##div[data-box-name="Container carousel reco ended"]
 allegro.pl##div[data-box-name="Layout"] > div > div > div:not([data-box-name])
 ! Experimental - automatic description & parameters expansion (PL only for now)
-allegro.pl##+js(trusted-click-element,[data-box-name="Product Description Bar"] > div > div > #\:R1H1\:, , 1000)
-allegro.pl##+js(trusted-click-element,[data-box-name="Product Parameter Bar"] > div > div > #\:R1H1\:, , 1000)
+allegro.pl##+js(trusted-click-element,[data-box-name="Product Description Bar"] > div > div > #\:R1H1\:, , 1500)
+allegro.pl##+js(trusted-click-element,[data-box-name="Product Parameter Bar"] > div > div > #\:R1H1\:, , 1500)
 
 ! Basket (other editions to be investigated)
 allegro.pl##div[data-box-name="cart.carousel"]
