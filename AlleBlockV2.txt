@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.14
-! Date: 2026/05/09
+! Version: 2026.15
+! Date: 2026/06/25
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -46,6 +46,7 @@ allegro.cz,allegro.sk##div[data-box-name^="allegro.modal"]:has(div[data-box-name
 ! General
 allegro.pl##div[data-box-name="allegro.navigation.layers.row2.column4"]
 allegro.pl##div[data-box-name="layout.container.row2.column"]
+! TODO: strony działów są całkowicie ukryte, powinny być tylko odnośniki do podkategorii
 allegro.pl##div[data-box-name="structure-container"]
 allegro.pl##div[data-box-name="rankingi"]
 allegro.pl##div[data-role="BRANDS_SECTION"]
@@ -177,7 +178,7 @@ allegro.cz,allegro.hu##div[data-box-name^="Eager"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-analytics-groups*="allegro.ads"]
 allegro.pl##div[data-box-name="Offer bundles"]
 allegro.pl##div[data-box-name="Seller Banner Container"]
-allegro.pl##img[alt*="baner"]
+! allegro.pl##img[alt*="baner"]
 allegro.cz##img[alt*="banner"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name^="reco.bottom.container"]
 allegro.pl,allegro.cz,allegro.sk##div[data-box-name^="offers_reco_same_seller_pixel"]
