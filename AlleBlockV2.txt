@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.15
-! Date: 2026/06/25
+! Version: 2026.16
+! Date: 2026/07/15
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -370,8 +370,8 @@ olx.*##div#searchmain-container > div:not(:has(form)):not(:has(div[data-testid="
 
 ! Listings
 olx.*##form > div:has(div[data-testid="loyalty-banner-wrapper"])
-olx.*##div.listing-grid-container > div > div:has(button[data-cy="l-save-search-banner-button"])
-olx.*##div.listing-grid-container > div > div:has(div[font-weight])
+olx.*##div.listing-ad-badge-portal-root > div > div:has(button[data-cy="l-save-search-banner-button"])
+olx.*##div.listing-ad-badge-portal-root > div > div:has(div[font-weight])
 olx.*##div[data-cy^="seo-"]
 olx.*##div[data-testid^="seo-"]
 olx.*##p[data-cy="description-text"]
