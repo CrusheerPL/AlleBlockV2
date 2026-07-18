@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.16
-! Date: 2026/07/15
+! Version: 2026.17
+! Date: 2026/07/18
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -370,8 +370,8 @@ olx.*##div#searchmain-container > div:not(:has(form)):not(:has(div[data-testid="
 
 ! Listings
 olx.*##form > div:has(div[data-testid="loyalty-banner-wrapper"])
-olx.*##div.listing-ad-badge-portal-root > div > div:has(button[data-cy="l-save-search-banner-button"])
-olx.*##div.listing-ad-badge-portal-root > div > div:has(div[font-weight])
+olx.*##div.listing-item-badge-portal-root > div > div:has(button[data-cy="l-save-search-banner-button"])
+olx.*##div.listing-item-badge-portal-root > div > div:has(div[font-weight])
 olx.*##div[data-cy^="seo-"]
 olx.*##div[data-testid^="seo-"]
 olx.*##p[data-cy="description-text"]
@@ -409,5 +409,6 @@ olx.*##+js(set, window.scrollTo, noopFunc)
 ! Vinted
 vinted.*##+js(set-cookie, is_shipping_fees_applied_info_banner_dismissed, true)
 vinted.*##+js(set-local-storage-item, search_by_image_interacted_count, 2)
+vinted.*##div[class^="_ads-module"][data-testid="slot-container"]
 vinted.*##.sidebar-container
 vinted.*##div[data-testid^="closet-promotion"]
