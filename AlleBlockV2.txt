@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: AlleBlockV2
 ! Description: Continuously updated uBO/AdGuard filter list which aims to improve the user experience of Allegro, OLX, etc. platforms by hiding or deactivating vastly most of their annoyances.
-! Version: 2026.19
-! Date: 2026/08/22
+! Version: 2026.20
+! Date: 2026/09/20
 ! Expires: 1 days
 ! Homepage: https://github.com/CrusheerPL/AlleBlockV2
 
@@ -156,6 +156,7 @@ allegro.pl##div[data-box-name="AggregatedFiltersCategoryListing"]
 allegro.pl##div[data-box-name="popularne miasta mob"]
 
 ! Empty search results
+allegro.pl,allegro.cz##div[data-box-name="categoriesSuggester.container"]
 allegro.pl,allegro.cz##div[data-box-name^="ESR_categories.suggester"]
 allegro.pl,allegro.cz,allegro.sk,allegro.hu##div[data-box-name="ESR_alternatives.suggester"]
 allegro.pl,allegro.cz##div[data-box-name^="ESR_recommendation.container"]
@@ -199,7 +200,7 @@ allegro.hu##main#main-content > div > div > div:has(h2:has-text(Egyéb a követk
 allegro.pl##div[data-box-name^="allegro.app.promotion."]
 allegro.pl##div[data-box-name="layout.container"][data-analytics-groups*="showproduct.content"] > div > div > div:not([data-box-name])
 allegro.pl##div[data-box-name="showproduct.content"] > div > div > div:not([data-box-name])
-allegro.pl##main#main-content:not([data-box-name="listing"],[data-box-name="allegro.cart.view"]) > div > div > div:not([data-box-name])
+allegro.pl,allegro.cz##main#main-content:not([data-box-name="listing"],[data-box-name="allegro.cart.view"]) > div > div > div:not([data-box-name])
 allegro.pl##div[data-box-name="infinite-feed.wrapper"]
 ! "Added to basket" popup
 allegro.pl##div[data-box-name="precart-recommendations"]
@@ -242,8 +243,8 @@ allegro.pl##div[data-testid="partial-optimization-content"]
 allegro.pl##div[data-testid="optimizer-content"]
 allegro.pl##div[data-box-name^="allegro.ai"]
 allegro.pl##div[data-box-name="Upsell Container"]
-allegro.pl##div[data-box-name="allegro.ask.on.page.container"]
-allegro.pl##div[data-box-name="ask on page - analytical pixel"]
+allegro.pl##div[data-box-name^="allegro.ask.on.page.container"]
+allegro.pl##div[data-box-name^="ask on page - analytical pixel"]
 
 ! Others (to be categorized if possible)
 allegro.pl##div#recoSlotId
